@@ -1,6 +1,7 @@
 from django.contrib import admin
+from django.contrib.admin import register
 from blog.models import Blog
 
-admin.site.register(Blog)
+@register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ("ahther", "title", "content")
+    list_display = ("auther", "title", "content", "date")
