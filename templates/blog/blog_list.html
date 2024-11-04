@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" 
+        content="شرکت بازرگانی پیوند تجارت جنوب با سابقه بلندمدت در عرصه‌ی ترخیص کالا، صادرات، واردات، ترانزیت،
+        و کلیه امور گمرکی، به عنوان یک مرجع معتبر و قابل اعتماد در زمینه‌ی خدمات بازرگانی است."/>
+        <meta name=”robots” content=”index, follow”>
+        <meta name="language" content="FA">
+        <title>شرکت بازرگانی و انواع آن - پیوند تجارت جنوب</title>
+        <link rel="icon" type="image/x-icon" href="images/ptj_logo.ico">
+        <link rel="stylesheet" href="blogs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+    </head>
+    <!-- header start -->
+    <div class="header">
+        <nav class="navbar fixed-top">
+        <div class="desktop-logo">
+            <a href="../index.html" style="color: #f6f5f0; font-size:40px ;">پیوند تجارت جنوب</a>
+        </div>
+            <div class="logo">
+        <img src="../images/logo.png" alt="">
+        </div>
+        <div class="name-logo">
+            <a href="../index.html" style="color: #f6f5f0; font-size:15px ;">پیوند تجارت جنوب</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            <ul class="nav-list">
+                <li><a href="../404/404.html">ارتباط با ما</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="../404/404.html">خدمات ما</a></li>
+                <li><a href="../index.html">خانه</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../javascript/script.js"></script>
+    <!-- header finish -->
+    
+    <body>
+        <div class="content-area">
+            <div class="wrapper">
+                <div class="text-part">
+                    <h2 class="title">
+                        blogs:
+                    </h2>
+                    {% for blog in blogs %}
+                        <p>
+                            {{ blog.title }}
+                        </p>
+                    {% endfor %}
+                </div>
+
+                <!-- footer -->
+                <footer class="footer">
+                    <table class="table-footer">
+                      <tr>
+                        <th><h3 class="logo-footer">Peyvand Tejarat Jonoob</h2></th>
+                        <th ><h2 class="logo-footer">ارتباط با ما</h2></th>
+                        <th id="dastresi"><h2 class="logo-footer">دسترسی اسان</h2></th>
+                      </tr>
+                      <tr>
+                        <td><h3 style="color: #f6f5f0;" class="logo-footer">همراه شما در تمامی امور گمرکی</h3></td>
+                        <td><a id="what" href="https://wa.me/+989174395205" target="_blank"><i class="fa fa-whatsapp" style="color: #f6f5f0; font-size:15px;">  واتساپ مجموعه  </i></a> </td>
+                        <td><p></p></td>
+                      </tr>
+                      <tr> 
+                        <td><p></p></td>
+                        <td><a id="insta" href="" target="_blank"><i class="fa fa-instagram" style="color: #f6f5f0; font-size:15px;">اینستاگرام مجموعه</i></td>
+                        <td><p></p></td>
+                      </tr>
+                    </table>
+                  </footer>
+                  <div class="copyright">
+                      تمامی حقوق سایت متعلق به <a href="https://github.com/yas3in/" target="_blank">یاسین</a> می باشد.
+                  </div>
+                <!-- footer finish -->
+
+            </div>
+        </div>
+    </body>
+</html>
