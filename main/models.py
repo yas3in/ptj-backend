@@ -6,6 +6,5 @@ class User(models.Model):
     is_active = models.BooleanField(default=False)
     email = models.EmailField(blank=True, default=" ")
     
-    def __str__(self) -> str:
-        return {self.username}  
-     
+    def __str__(self):
+        return f"{self.username}"
