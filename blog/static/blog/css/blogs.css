@@ -58,7 +58,7 @@ body {
 	text-align: center;
 	margin:0;
 	padding:0;
-	/* height:100%; */
+	height:100%;
 	font-family: 'Signika', sans-serif;
 	background-color: #f6f5f0;
 }
@@ -98,7 +98,7 @@ header {
 	position: relative;
 	top: 200px;
 	background-color: #f6f5f0;
-	/* height: 500px; */
+	height: 500px;
 	padding-bottom: 50px;
 }
 
@@ -131,7 +131,7 @@ hr {
 	height: 250px;
 	width: 100%;
 	background-color: #5dbcd2;
-	position: sticky;
+	position: relative;
 	top: 0;
 	text-align: center;
 	margin: 0;
