@@ -1,12 +1,15 @@
-{% extends "blog_base.html" %}
+{% extends "blog/blog_base.html" %}
 
 {% load static %}
 
-{% block title %}
+{% block title-header %}
 پیوند تجارت جنوب; مقاله ها
-{% endblock title %}
+{% endblock title-header %}
 
-
-{% block style %} {% static 'blog/css/blogs.css' %} {% endblock style %}
+{% block blog_date %} {{show_blog.date}} {% endblock blog_date %}
 
 {% block auther %} {{show_blog.auther}} {% endblock auther %}
+
+{% block title %} {{show_blog.title}} {% endblock title %}
+
+{% block content %} {{show_blog.content}} {% endblock content %}

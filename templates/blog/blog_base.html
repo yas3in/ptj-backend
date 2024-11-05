@@ -10,9 +10,9 @@
         و کلیه امور گمرکی، به عنوان یک مرجع معتبر و قابل اعتماد در زمینه‌ی خدمات بازرگانی است."/>
         <meta name=”robots” content=”index, follow”>
         <meta name="language" content="FA">
-        <title>{% block title %}{% endblock title %}</title>
+        <title>{% block title-header %} {% endblock title-header %}</title>
         <link rel="icon" type="image/x-icon" href="../images/ptj_logo.ico">
-        <link rel="stylesheet" href="{% block style %}{% endblock style %}">
+        <link rel="stylesheet" href="{% static "blog/css/blogs.css" %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -45,7 +45,7 @@
             </ul>
         </nav>
     </div>
-    <script src="../javascript/script.js"></script>
+    <script src="{% static "blog/js/script.js" %}"></script>
     <!-- header finish -->
     
     <body>
@@ -53,28 +53,18 @@
             <div class="wrapper">
                 <div class="text-part">
                     <div class="auther-part">
-                    <span class="auther">نویسنده : {% block auther %}{% endblock auther %}</span>
-                    <span class="blog_date">{% block blog_date %}{% endblock blog_date %}</span> 
+                        <span class="auther">نویسنده : {% block auther %}{% endblock auther %}</span>
+                        <span class="blog_date">تاریخ انتشار: {% block blog_date %}{% endblock blog_date %}</span> 
                     </div>
                     <hr class="auther-line">
                     <h2 class="title">
-                        ما کی هستیم؟
+                        {% block title %}{% endblock title %}
                     </h2>
                     <p>
-                        شرکت بازرگانی پیوند تجارت جنوب با سابقه بلندمدت در عرصه‌ی ترخیص کالا، صادرات، واردات، ترانزیت،
-                        و کلیه امور گمرکی، به عنوان یک مرجع معتبر و قابل اعتماد در زمینه‌ی خدمات بازرگانی است.
+                        {% block content %}{% endblock content %}
                     </p>
                 </div>
-                <img src="../images/aboutus.jpg" style="height: 450px; width: 900px; margin-bottom: 100px;">
-                <img src="../images/aboutus.jpg" id="aboutus-mobile" style="height: 450px; width: 900px; margin-bottom: 100px;">
-                <div class="text-part">
-                    <h2 class="title">
-                        چرا باید مارو انتخاب کنید؟
-                    </h2> 
-                    <p>
-                        با تلاش بی‌وقفه و تعهد به اصول حرفه‌ای، شرکت ما به عنوان نمادی از اعتماد و کیفیت در عرصه بازرگانی شناخته شده است. از نخستین روز تا به امروز، ماموریت ما تبدیل چالش‌ها به فرصت‌ها و ارائه راه‌حل‌های نوآورانه برای مشتریانمان بوده است.  
-                    </p>
-                </div>
+                
                 <!-- footer -->
                 <footer class="footer">
                     <table class="table-footer">

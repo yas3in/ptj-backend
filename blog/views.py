@@ -12,5 +12,5 @@ def blog_list(request):
 
 def show_blog(request, pk):
     context = {}
-    context['show_blog'] = Blog.objects.get()
-    return render(request, "blog/show_blog.html", context=context)
+    context['show_blog'] = Blog.objects.get(id=pk)
+    return render(request, "blog/show_blog.html", context=context) 
