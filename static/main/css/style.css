@@ -277,7 +277,7 @@ body {
 	height: 350px;
 	position: fixed;
 	top: 150px;
-	background-image: url({../images/eskele_tire.jpg});
+	background-image: url("../images/eskele_tire.jpg");
 	/* -webkit-background-size: cover; */
 	background-size: cover;
 	background-position: center;

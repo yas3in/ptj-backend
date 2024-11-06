@@ -294,27 +294,6 @@ header {
     margin-left: 20px;
 }
 
-.banner-area {
-	width: 100%;
-	height: 350px;
-	position: fixed;
-	top: 150px;
-	background-image: url(../images/eskele_tire.jpg);
-	/* -webkit-background-size: cover; */
-	background-size: cover;
-	background-position: center;
-	opacity: 80%;
-}
- 
-.banner-area h2 {
-	padding-top: 8%;
-	font-size: 70px;
-	font-family: poppins;
-	text-transform: uppercase;
-	color: #f6f5f0;
-    text-align: center;
-}
-
 #mobile-menu {
     background-color: #5dbcd2;
 }
@@ -353,7 +332,7 @@ header {
 /* استایل برای موبایل */
 @media (max-width: 950px) {
     .nav-list {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-family: Arial, Helvetica, sans-serif;
         display: none;
         flex-direction: row-reverse;
         width: 100%;
@@ -378,22 +357,8 @@ header {
         direction: rtl;
     }
 
-    .banner-area h2 {
-        font-size: 30px;
-        padding-top: 100px;
-    }
-
-    .banner-area {
-        width: 100%;
-        margin-top: 0px;
-        height: 300px;
-        text-align: center;
-		top: 100px;
-    }
-
     .navbar .logo {
         display: flex;
-        /* width: 100%; */
         margin-left: -10px;
     }
 
@@ -411,6 +376,7 @@ header {
 
     .nav-list a {
         font-size: 12px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
     .desktop-logo {

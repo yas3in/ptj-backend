@@ -14,7 +14,7 @@
     <title>{% block title %}  {% endblock title %}</title>
 
 
-    <link rel="icon" type="image/x-icon" href="images/ptj_logo.ico">
+    <link rel="icon" type="image/x-icon" href="{% static "main/images/ptj_logo.ico" %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static "main/css/style.css" %}">
     <script
@@ -31,7 +31,7 @@
         <a href="#" style="color: #f6f5f0; font-size:40px ;">پیوند تجارت جنوب</a>
       </div>
       <div class="logo">
-       <img src="images/logo.png" alt="">
+       <img src="{% static "main/images/logo.png" %}" alt="">
       </div>
       <div class="name-logo">
         <a href="#" style="color: #f6f5f0; font-size:15px ;">پیوند تجارت جنوب</a>
@@ -42,19 +42,19 @@
           <span class="bar"></span>
       </div>
         <ul class="nav-list">
-            <li><a href="404/404.html">ارتباط با ما</a></li>
-            <li><a href="html/aboutus.html">درباره ما</a></li>
-            <li><a href="404/404.html">خدمات ما</a></li>
-            <li><a href="404/404.html">مقاله ها</a></li>
+            <li><a href="main/contact.html">ارتباط با ما</a></li>
+            <li><a href="main/aboutus.html">درباره ما</a></li>
+            <li><a href="main/404.html">خدمات ما</a></li>
+            <li><a href="blog/blog_list.html">مقاله ها</a></li>
         </ul>
     </nav>
   </div>
-  <script src="javascript/script.js"></script>
-  {% block banner-area %}
-  
-  {% endblock banner-area %}
+  <script type="text/javascript" src="{% static 'main/js/script.js' %}"></script>
+  <div class="banner-area">
+    <h2>شرکت بازرگانی پیوند تجارت جنوب</h2>
+  </div>
+
   <!-- header finish -->
-  
   <body>
       <div class="content-area">
         <div class="wrapper">
