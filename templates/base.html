@@ -10,6 +10,7 @@
      و کلیه امور گمرکی، به عنوان یک مرجع معتبر و قابل اعتماد در زمینه‌ی خدمات بازرگانی است."/>
     <meta name=”robots” content=”index, follow”>
     <meta name="language" content="FA">
+    <meta name="keywords" content="شرکت بازرگانی، شرکت بازرگانی پیوند تجارت جنوب، پیوند تجارت جنوب، ترخیص کالا، صادرات و واردتا کالا، ترانزیت کالا داخلی و خارجی"/>
     
     <title>{% block title %}  {% endblock title %}</title>
 
@@ -45,7 +46,7 @@
             <li><a href="main/contact.html">ارتباط با ما</a></li>
             <li><a href="main/aboutus.html">درباره ما</a></li>
             <li><a href="main/404.html">خدمات ما</a></li>
-            <li><a href="blog/blog_list.html">مقاله ها</a></li>
+            <li><a href="{% url 'blog_list' %}">مقاله ها</a></li>
         </ul>
     </nav>
   </div>
