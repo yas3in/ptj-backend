@@ -52,11 +52,7 @@
         <div class="content-area">
             <div class="wrapper">
                 <div class="text-part">
-                    <div class="auther-part">
-                        <span class="auther">نویسنده : {% block auther %}{% endblock auther %}</span>
-                        <span class="blog_date">تاریخ انتشار: {% block blog_date %}{% endblock blog_date %}</span> 
-                    </div>
-                    <hr class="auther-line">
+                    {% block auther-part %}{% endblock auther-part %}
                     <h2 class="title">
                         {% block title %}{% endblock title %}
                     </h2>

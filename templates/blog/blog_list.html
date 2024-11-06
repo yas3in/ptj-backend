@@ -10,10 +10,11 @@
 
 {% block content %} 
 
+<ul class="blogs-li">
 {% for blog in blog_list %}
-    <a>
-        {{blog.title}}
-    </a>
+    <li>
+        <a href="{{blog.title}}">{{blog.title}}</a>
+    </li>
 {% endfor %}
-
+</ul>
 {% endblock content %}

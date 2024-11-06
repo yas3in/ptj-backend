@@ -6,9 +6,15 @@
 {{show_blog.title}}
 {% endblock title-header %}
 
-{% block blog_date %} {{show_blog.date}} {% endblock blog_date %}
+{% block auther-part %}
 
-{% block auther %} {{show_blog.auther}} {% endblock auther %}
+<div class="auther-part">
+    <span class="auther">نویسنده : {% block auther %} {{show_blog.auther}} {% endblock auther %}</span>
+    <span class="blog_date">تاریخ انتشار: {% block blog_date %}{{show_blog.date}}{% endblock blog_date %}</span> 
+</div>
+<hr class="auther-line">
+
+{% endblock auther-part %}
 
 {% block title %} {{show_blog.title}} {% endblock title %}
 
