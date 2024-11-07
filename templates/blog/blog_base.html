@@ -11,7 +11,7 @@
         <meta name=”robots” content=”index, follow”>
         <meta name="language" content="FA">
         <title>{% block title-header %} {% endblock title-header %}</title>
-        <link rel="icon" type="image/x-icon" href="../images/ptj_logo.ico">
+        <link rel="icon" type="image/x-icon" href="{% static "blog/images/ptj_logo.ico" %}">
         <link rel="stylesheet" href="{% static "blog/css/blogs.css" %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script
@@ -24,13 +24,13 @@
     <div class="header">
         <nav class="navbar fixed-top">
         <div class="desktop-logo">
-            <a href="../index.html" style="color: #f6f5f0; font-size:40px ;">پیوند تجارت جنوب</a>
+            <a href="{% url "index" %}" style="color: #f6f5f0; font-size:40px ;">پیوند تجارت جنوب</a>
         </div>
             <div class="logo">
-        <img src="../images/logo.png" alt="">
+        <img src="{% static "blog/images/logo.png" %}" alt="">
         </div>
         <div class="name-logo">
-            <a href="../index.html" style="color: #f6f5f0; font-size:15px ;">پیوند تجارت جنوب</a>
+            <a href="{% url "index" %}" style="color: #f6f5f0; font-size:15px ;">پیوند تجارت جنوب</a>
         </div>
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -38,10 +38,10 @@
             <span class="bar"></span>
         </div>
             <ul class="nav-list">
-                <li><a href="contact.html">ارتباط با ما</a></li>
-                <li><a href="aboutus.html">درباره ما</a></li>
-                <li><a href="../404/404.html">خدمات ما</a></li>
-                <li><a href="../404/404.html">مقاله ها</a></li>
+                <li><a href="{% url "contact" %}">ارتباط با ما</a></li>
+                <li><a href="{% url "aboutus" %}">درباره ما</a></li>
+                <li><a href="{% url "404" %}">خدمات ما</a></li>
+                <li><a href="{% url "blog_list" %}">مقاله ها</a></li>
             </ul>
         </nav>
     </div>

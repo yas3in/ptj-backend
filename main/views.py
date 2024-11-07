@@ -16,3 +16,4 @@ def contact(request):
 
 def service(request):
     return render(request, "404.html")
+ 
