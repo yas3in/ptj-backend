@@ -43,9 +43,9 @@
           <span class="bar"></span>
       </div>
         <ul class="nav-list">
-            <li><a href="main/contact.html">ارتباط با ما</a></li>
-            <li><a href="main/aboutus.html">درباره ما</a></li>
-            <li><a href="main/404.html">خدمات ما</a></li>
+            <li><a href="{% url "contact" %}">ارتباط با ما</a></li>
+            <li><a href="{% url "aboutus" %}">درباره ما</a></li>
+            <li><a href="{% url "404" %}">خدمات ما</a></li>
             <li><a href="{% url 'blog_list' %}">مقاله ها</a></li>
         </ul>
     </nav>
