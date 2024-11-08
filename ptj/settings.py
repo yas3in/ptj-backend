@@ -25,8 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-ALLOWED_HOSTS = ["https://www.peyvand-tejarat-jonoob.it", "https://peyvand-tejarat-jonoob.ir", "peyvand-tejarat-jonoob.ir"]
+ALLOWED_HOSTS = ["127.0.0.1", "https://www.peyvand-tejarat-jonoob.it", "https://peyvand-tejarat-jonoob.ir", "peyvand-tejarat-jonoob.ir"]
 
+
+PORT = 80
 
 # Application definition
 

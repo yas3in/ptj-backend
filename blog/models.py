@@ -7,10 +7,14 @@ class Blog(models.Model):
     date = jdatetime.datetime.now()
     date_str = date.strftime("%Y/%m/%d")
     
-    auther = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user")
+    auther = models.ForeignKey(User, on_delete=models.CASCADE, related_name="fuul_name")
     title = models.CharField (max_length=48)
     content = models.TextField()
     date = jmodels.jDateField(auto_now=True)
     
     def __str__(self):
         return f"{self.title}"
+    
+    
+    def has_change_permission(self, request, obj=None):
+        return True
