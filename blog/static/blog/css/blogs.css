@@ -17,6 +17,19 @@
 	text-align: right;
 	direction: rtl;
 	margin-right: 150px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titr {
+	font-size: 30px;
+	color: #000000;
+	line-height: normal;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-shadow: none;
+	direction: rtl;
+	line-height: 30px;
 }
 
 .blogs-li a{
@@ -71,7 +84,7 @@ p {
 }
 
 .title {
-	font-family: poppins;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	letter-spacing: 4px;
 	padding-top: 30px;
 	font-size: 40px;

@@ -56,9 +56,11 @@
   <body>
       <div class="content-area">
         <div class="wrapper">
-          {% block text-part %}
-          
-          {% endblock text-part %}
+          {% autoescape on %}
+            {% block text-part %}
+
+            {% endblock text-part %}
+          {% endautoescape %}
           <!-- footer start -->
           <footer class="footer">
             <table class="table-footer">

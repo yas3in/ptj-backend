@@ -52,13 +52,16 @@
         <div class="content-area">
             <div class="wrapper">
                 <div class="text-part">
+                    {% autoescape off %}
                     {% block auther-part %}{% endblock auther-part %}
+                    
                     <h2 class="title">
                         {% block title %}{% endblock title %}
                     </h2>
                     <p>
                         {% block content %}{% endblock content %}
                     </p>
+                    {% endautoescape %}
                 </div>
                 
                 <!-- footer -->
