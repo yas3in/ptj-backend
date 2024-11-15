@@ -17,3 +17,7 @@ def contact(request):
 def service(request):
     return render(request, "404.html")
  
+ 
+def authentication(request):
+    return render(request, "main/authentication.html")     
+ 
