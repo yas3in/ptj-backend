@@ -1,9 +1,10 @@
 from django.shortcuts import render
-
+import jdatetime
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    emroz = jdatetime.datetime.today()
+    return render(request, 'main/index.html', {'emroz': emroz.date()})
 
 
 def aboutus(request):
